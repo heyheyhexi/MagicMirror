@@ -18,6 +18,7 @@ Module.register("clock",{
 		showDate: true,
 		showWeek: false,
 		dateFormat: "dddd, LL",
+        timezonelocation: "Set Location",
 
 		/* specific to the analog clock */
 		analogSize: "200px",
@@ -62,12 +63,14 @@ Module.register("clock",{
 		var timeWrapper = document.createElement("div");
 		var secondsWrapper = document.createElement("sup");
 		var periodWrapper = document.createElement("span");
-		var weekWrapper = document.createElement("div")
+		var weekWrapper = document.createElement("div");
+        var timezonelocationWrapper = document.createElement("div")
 		// Style Wrappers
 		dateWrapper.className = "date normal medium";
 		timeWrapper.className = "time bright large light";
 		secondsWrapper.className = "dimmed";
-		weekWrapper.className = "week dimmed medium"
+		weekWrapper.className = "week dimmed medium";
+        timezonelocationWrapper.className = "date normal medium"
 
 		// Set content of wrappers.
 		// The moment().format("h") method has a bug on the Raspberry Pi.
@@ -109,6 +112,9 @@ Module.register("clock",{
 		if (this.config.showPeriod && this.config.timeFormat !== 24) {
 			timeWrapper.appendChild(periodWrapper);
 		}
+        if(this.config.timezonelocation){
+            timezonelocationWrapper.innerHTML = this.config.timezonelocation;
+        }
 
 		/****************************************************************
 		 * Create wrappers for ANALOG clock, only if specified in config
@@ -179,6 +185,7 @@ Module.register("clock",{
 			wrapper.appendChild(dateWrapper);
 			wrapper.appendChild(timeWrapper);
 			wrapper.appendChild(weekWrapper);
+            wrapper.appendChild(timezonelocationWrapper);
 		} else if (this.config.displayType === "analog") {
 			// Display only an analog clock
 
