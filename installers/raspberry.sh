@@ -167,6 +167,12 @@ if [[ $choice =~ ^[Yy]$ ]]; then
 	export DISPLAY=:0; xset s noblank;xset s off;xset -dpms
 fi
 
+# Hiding Mouse Pointer
+read -p "Do you want to disable the mouse pointer? (y/N)?" choice
+if [[ $choice =~ ^[Yy]$ ]]; then
+	sudo apt-get install unclutter
+fi
+
 # Install modules
 read -p "Do you want to install DWD-WarnWeather module? (y/N)?" choice
 if [[ $choice =~ ^[Yy]$ ]]; then
