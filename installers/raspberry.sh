@@ -190,3 +190,8 @@ echo " "
 echo -e "\e[92mWe're ready! Run \e[1m\e[97mDISPLAY=:0 npm start\e[0m\e[92m from the ~/MagicMirror directory to start your MagicMirror.\e[0m"
 echo " "
 echo " "
+
+read -p "Do you want to reboot? (y/N)?" choice
+if [[ $choice =~ ^[Yy]$ ]]; then
+	sudo reboot
+fi
