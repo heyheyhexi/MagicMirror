@@ -167,6 +167,19 @@ if [[ $choice =~ ^[Yy]$ ]]; then
 	export DISPLAY=:0; xset s noblank;xset s off;xset -dpms
 fi
 
+# Install modules
+read -p "Do you want to install DWD-WarnWeather module? (y/N)?" choice
+if [[ $choice =~ ^[Yy]$ ]]; then
+	cd ~/MagicMirror/modules
+    git clone https://github.com/LukeSkywalker92/MMM-DWD-WarnWeather.git
+    npm install
+fi
+read -p "Do you want to install Globe module? (y/N)?" choice
+if [[ $choice =~ ^[Yy]$ ]]; then
+	cd ~/MagicMirror/modules
+    git clone https://github.com/LukeSkywalker92/MMM-Globe.git
+fi
+
 echo " "
 echo -e "\e[92mWe're ready! Run \e[1m\e[97mDISPLAY=:0 npm start\e[0m\e[92m from the ~/MagicMirror directory to start your MagicMirror.\e[0m"
 echo " "
