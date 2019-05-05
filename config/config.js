@@ -7,7 +7,7 @@
 var config = {
 	address: "0.0.0.0",
 	port: 8080,
-	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "192.168.2.119", "192.168.2.149"],
+	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "192.168.2.119", "192.168.2.149", "192.168.2.117"],
 
 	language: 'de',
 	timeFormat: 24,
@@ -44,6 +44,7 @@ var config = {
 				locationID: '1645528',  //ID from http://www.openweathermap.org
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Denpasar, Bali',
+                showFeelsLike: false,
 			}
 		},
 		{
@@ -54,7 +55,7 @@ var config = {
 				locationID: '2918987',  //ID from http://www.openweathermap.org
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Görlitz',
-                showFeelsLike: false
+                showFeelsLike: false,
 			}
 		},
 		{
