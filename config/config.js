@@ -39,6 +39,7 @@ var config = {
 		{
 			module: 'currentweather',
 			position: 'top_right',
+            header: '',
 			config: {
 				location: 'Denpasar',
 				locationID: '1645528',  //ID from http://www.openweathermap.org
@@ -50,6 +51,7 @@ var config = {
 		{
 			module: 'currentweather',
 			position: 'top_right',
+            header: '',
 			config: {
 				location: 'Görlitz',
 				locationID: '2918987',  //ID from http://www.openweathermap.org
