@@ -184,6 +184,15 @@ if [[ $choice =~ ^[Yy]$ ]]; then
 	cd ~/MagicMirror/modules
     git clone https://github.com/LukeSkywalker92/MMM-Globe.git
 fi
+read -p "Do you want to install MMM-Remote-Control module? (y/N)?" choice
+if [[ $choice =~ ^[Yy]$ ]]; then
+	cd ~/MagicMirror/modules
+    git clone https://github.com/Jopyth/MMM-Remote-Control.git
+    cd MMM-Remote-Control
+    npm install
+    cd ~/MagicMirror/modules
+    git clone https://github.com/eouia/MMM-Remote-Control-Repository
+fi
 
 echo " "
 echo -e "\e[92mWe're ready! Run \e[1m\e[97mDISPLAY=:0 npm start\e[0m\e[92m from the ~/MagicMirror directory to start your MagicMirror.\e[0m"
