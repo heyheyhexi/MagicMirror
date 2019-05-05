@@ -63,7 +63,8 @@ var config = {
 			config: {
 				location: 'Görlitz',
 				locationID: '2918987',  //ID from http://www.openweathermap.org
-				appid: 'd327541af26bdcda47432fced90c2db2'
+				appid: 'd327541af26bdcda47432fced90c2db2',
+                showFeelsLike: false
 			}
 		},
 		{
@@ -94,7 +95,7 @@ var config = {
         			noWarningText: 'Keine Warnungen'
     			}
 		},
-		{
+/*		{
 					module: 'MMM-Globe',
 					position: 'lower_third',
 			config: {
@@ -104,7 +105,7 @@ var config = {
 					updateInterval: 10*60*1000
 				}
 		},
-		{
+*/		{
     			module: 'MMM-Remote-Control'
     		},
 		{

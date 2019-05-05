@@ -59,18 +59,18 @@ Module.register("clock",{
 		 * Create wrappers for DIGITAL clock
 		 */
 
+        var timezonelocationWrapper = document.createElement("div")
 		var dateWrapper = document.createElement("div");
 		var timeWrapper = document.createElement("div");
 		var secondsWrapper = document.createElement("sup");
 		var periodWrapper = document.createElement("span");
 		var weekWrapper = document.createElement("div");
-        var timezonelocationWrapper = document.createElement("div")
 		// Style Wrappers
+        timezonelocationWrapper.className = "date normal medium"
 		dateWrapper.className = "date normal medium";
 		timeWrapper.className = "time bright large light";
 		secondsWrapper.className = "dimmed";
 		weekWrapper.className = "week dimmed medium";
-        timezonelocationWrapper.className = "date normal medium"
 
 		// Set content of wrappers.
 		// The moment().format("h") method has a bug on the Raspberry Pi.
@@ -182,10 +182,11 @@ Module.register("clock",{
 
 		if (this.config.displayType === "digital") {
 			// Display only a digital clock
-			wrapper.appendChild(dateWrapper);
+			wrapper.appendChild(timezonelocationWrapper);
+            wrapper.appendChild(dateWrapper);
 			wrapper.appendChild(timeWrapper);
 			wrapper.appendChild(weekWrapper);
-            wrapper.appendChild(timezonelocationWrapper);
+            
 		} else if (this.config.displayType === "analog") {
 			// Display only an analog clock
 
