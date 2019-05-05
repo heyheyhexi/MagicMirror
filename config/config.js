@@ -45,8 +45,8 @@ var config = {
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Denpasar, Bali',
                 showFeelsLike: false,
-                initialLoadDelay: '5000',
                 roundTemp: true,
+                initialLoadDelay: '5000',
 			}
 		},
 		{
@@ -58,8 +58,8 @@ var config = {
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Görlitz',
                 showFeelsLike: false,
-                initialLoadDelay: '5000',
                 roundTemp: true,
+                initialLoadDelay: '5000',
 			}
 		},
 		{
@@ -70,6 +70,7 @@ var config = {
 				location: 'Görlitz',
 				locationID: '2918987',  //ID from http://www.openweathermap.org
 				appid: 'd327541af26bdcda47432fced90c2db2',
+                rinitialLoadDelay: '5000',
 			}
 		},
 		{
