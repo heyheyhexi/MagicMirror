@@ -39,12 +39,12 @@ var config = {
 		{
 			module: 'currentweather',
 			position: 'top_right',
-            header: '',
 			config: {
 				location: 'Denpasar',
 				locationID: '1645528',  //ID from http://www.openweathermap.org
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Denpasar, Bali',
+                showFeelsLike: false,
 			}
 		},
 		{

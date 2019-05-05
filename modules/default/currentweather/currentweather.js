@@ -115,9 +115,10 @@ Module.register("currentweather",{
     
     // add weather location
     addweatherlocation: function(wrapper) {
+        var weatherlocationWrapper = document.createElement("div");
+        weatherlocationWrapper.className = "date normal medium";
+        
         if (this.config.weatherlocation) {
-            var weatherlocationWrapper = document.createElement("div");
-            weatherlocationWrapper.className = "date normal medium";
             weatherlocationWrapper.innerHTML = this.config.weatherlocation;
         }
         wrapper.appendChild(weatherlocationWrapper);
