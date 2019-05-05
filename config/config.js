@@ -17,11 +17,11 @@ var config = {
 		{
 			module: 'alert',
 		},
-/*		{
+		{
 			module: "updatenotification",
 			position: "top_bar"
 		},
-*/		{
+		{
 			module: 'clock',
 			position: 'top_left',
 			config: {
@@ -94,7 +94,7 @@ var config = {
         			noWarningText: 'Keine Warnungen'
     			}
 		},
-/*		{
+		{
 					module: 'MMM-Globe',
 					position: 'lower_third',
 			config: {
@@ -104,7 +104,7 @@ var config = {
 					updateInterval: 10*60*1000
 				}
 		},
-*/		{
+		{
     			module: 'MMM-Remote-Control'
     		},
 		{
