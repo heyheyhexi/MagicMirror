@@ -198,6 +198,10 @@ Module.register("currentweather",{
 			wrapper.className = "dimmed light small";
 			return wrapper;
 		}
+        
+        if (this.config.weatherlocation) {
+            this.addweatherlocation(wrapper);
+        }
 
 		if (this.config.onlyTemp === false) {
 			this.addExtraInfoWeather(wrapper);
