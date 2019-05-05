@@ -45,13 +45,11 @@ var config = {
 				locationID: '1645528',  //ID from http://www.openweathermap.org
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Denpasar, Bali',
-                showFeelsLike: false,
 			}
 		},
 		{
 			module: 'currentweather',
 			position: 'top_right',
-            header: '',
 			config: {
 				location: 'Görlitz',
 				locationID: '2918987',  //ID from http://www.openweathermap.org

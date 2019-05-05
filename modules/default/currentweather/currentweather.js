@@ -112,6 +112,16 @@ Module.register("currentweather",{
 		this.scheduleUpdate(this.config.initialLoadDelay);
 
 	},
+    
+    // add weather location
+    addweatherlocation: function(wrapper) {
+        if (this.config.weatherlocation) {
+            var weatherlocationWrapper = document.createElement("div");
+            weatherlocationWrapper.className = "date normal medium";
+            weatherlocationWrapper.innerHTML = this.config.weatherlocation;
+        }
+        wrapper.appendChild(weatherlocationWrapper);
+    },
 
 	// add extra information of current weather
 	// windDirection, humidity, sunrise and sunset
