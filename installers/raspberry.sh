@@ -174,6 +174,7 @@ if [[ $choice =~ ^[Yy]$ ]]; then
 fi
 
 # Install modules
+echo -e "\e[96mInstalling modules ...\e[90m"
 read -p "Do you want to install DWD-WarnWeather module? (y/N)?" choice
 if [[ $choice =~ ^[Yy]$ ]]; then
 	cd ~/MagicMirror/modules
