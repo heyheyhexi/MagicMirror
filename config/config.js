@@ -46,6 +46,7 @@ var config = {
 				weatherlocation: 'Denpasar, Bali',
                 showFeelsLike: false,
                 initialLoadDelay: '5000',
+                roundTemp: true,
 			}
 		},
 		{
@@ -58,6 +59,7 @@ var config = {
 				weatherlocation: 'Görlitz',
                 showFeelsLike: false,
                 initialLoadDelay: '5000',
+                roundTemp: true,
 			}
 		},
 		{
