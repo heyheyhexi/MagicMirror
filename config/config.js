@@ -45,6 +45,7 @@ var config = {
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Denpasar, Bali',
                 showFeelsLike: false,
+                initialLoadDelay: '5000',
 			}
 		},
 		{
@@ -56,6 +57,7 @@ var config = {
 				appid: 'd327541af26bdcda47432fced90c2db2',
 				weatherlocation: 'Görlitz',
                 showFeelsLike: false,
+                initialLoadDelay: '5000',
 			}
 		},
 		{
@@ -96,7 +98,7 @@ var config = {
         			noWarningText: 'Keine Warnungen'
     			}
 		},
-/*		{
+		{
 					module: 'MMM-Globe',
 					position: 'lower_third',
 			config: {
@@ -106,7 +108,7 @@ var config = {
 					updateInterval: 10*60*1000
 				}
 		},
-*/		{
+		{
     			module: 'MMM-Remote-Control'
     		},
 		{
