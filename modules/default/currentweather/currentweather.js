@@ -31,6 +31,8 @@ Module.register("currentweather",{
 		showIndoorTemperature: false,
 		showIndoorHumidity: false,
 		showFeelsLike: true,
+        
+        weatherlocation: "Set Location",
 
 		initialLoadDelay: 0, // 0 seconds delay
 		retryDelay: 2500,
